@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QuickTrainML</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>QuickTrainML</h1>
+        <h1>A GUI based tool for rapid ML training</h1>
+    </header>
+    
+    <section class="overview-section">
+        <h2>Overview</h2>
+        <p>QuickTrainML allows you to quickly and easily train machine learning models on your own data WITHOUT having to write a single line of code. Simply point it to the data file (like a CSV file), choose the columns to use as features, the target column that you would like to predict and the machine learning algorithm you would like to use, and voila, you have a trained model that you can run inference on!
+        <br><br>
+        Key features:
+
+        <ul>
+            <li>Choose from a variety of classification and regression algorithms for training including linear models (Linear and Logistic Regression), tree-based models(Random Forest), and Support Vector Machines</li>
+            <li>Get AI powered recommendations that provide concrete steps you can take to improve model performance. Scroll to the bottom to see it in action! </li>
+            <li>Perform exploratory data analysis using just the GUI, allowing you to visualize data distributions, feature interactions, etc.</li>
+            <li>Set custom hyper-parameters while training, with support for hyper parameter optimization</li>
+            <li>Visualize and compare the performance of various trained models to decide which one works best for your requirement. 
+
+        </ul>
+
+        </p>
+    </section>
+    
+    <section>
+        <h2>Exploratory Data Analysis</h2>
+        <p>Before training your machine learning model, you need to have a clear picture of what your dataset looks like. Use QuickTrainML's EDA Report builder to explore your dataset, learn more about what the data looks like and understand which features could be useful to train your machine learning model.</p>
+        <div class="gif-container" onclick="restartGif('gifImage1')">
+            <img src="eda.gif" alt="Your GIF 1" id="gifImage1">
+            <div class="info-message">Click to restart</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Training Your ML model</h2>
+        <p>To train your model, simply upload a CSV, select the columns you want as features and the target column and select the ML algorthm you would like to train on your dataset. You can also define the preprocessing steps for each column and also specify the hyperparameters. Once the model is trained, you can visualize the output.</p>
+        <div class="gif-container" onclick="restartGif('gifImage2')">
+            <img src="model_train.gif" alt="Your GIF 1" id="gifImage2">
+            <div class="info-message">Click to restart</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Making Predictions Using Trained Model</h2>
+        <p>To train your model, simply upload a CSV, select the columns you want as features and the target column and select the ML algorthm you would like to train on your dataset. You can also define the preprocessing steps for each column and also specify the hyperparameters. Once the model is trained, you can visualize the output.</p>
+        <div class="gif-container" onclick="restartGif('gifImage3')">
+            <img src="model_inference.gif" alt="Your GIF 1" id="gifImage3">
+            <div class="info-message">Click to restart</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>AI-Powered Model Training Feedback</h2>
+        <p>QuickTrainML uses its AI to analyse the results of your model training job and provides actionable feedback that can help you further improve your model's performance. Consider QuickTrainML to be your personal machine learning expert, that can coach you on ML best practises to get the best results!</p>
+        <div class="gif-container" onclick="restartGif('gifImage4')">
+            <img src="llm_model_feedback.gif" alt="Your GIF 2" id="gifImage4">
+            <div class="info-message">Click to restart</div>
+        </div>
+    </section>
+
+    <script>
+        function restartGif(imageId) {
+            var gifImage = document.getElementById(imageId);
+            gifImage.src = gifImage.src; // Assigning the same source restarts the GIF
+        }
+    </script>
+    
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to know more about our product, feel free to contact Rahul Kuriyedath on:</p>
+        <p>Email: rahul.kuriyedath@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rahul-kuriyedath">https://www.linkedin.com/in/rahul-kuriyedath</a></p>
+
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 QuickTrainML. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
